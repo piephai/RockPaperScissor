@@ -25,6 +25,7 @@ const game = () => {
         const randomNumber = Math.floor(Math.random() * 3);
         const computerChoice = computerOptions[randomNumber];
         compareHands(this.textContent, computerChoice);
+        console.log(this.textContent);
         playerHand.src = `./assets/${this.textContent}.png`;
         computerHand.src = `./assets/${computerChoice}.png`;
       });
